@@ -8,6 +8,9 @@ export const FormularioVagas = styled.form`
   border-radius: 12px;
   margin-top: 40px;
 }
+  @media(max-width: 768px){
+  grid-template-columns: 1fr
+  }
 `
 
 export const BtnPesquisar = styled.button`
@@ -19,8 +22,18 @@ export const BtnPesquisar = styled.button`
   color: var(--cor-secundaria);
   margin-left: 8px;
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    height: 40px;
+    margin-left: 0px;
+    margin-top: 8px;
+  }
 `
 export const Field = styled.input`
   padding: 0 16px;
   outline-color: var(--cor-principal);
+
+  @media (max-width: 768px) {
+    height: 40px;
+  }
 `
